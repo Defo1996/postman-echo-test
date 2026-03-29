@@ -12,7 +12,7 @@ class ApiTest {
     void testPostRequestToPostmanEcho() {
         given()
                 .baseUri("https://postman-echo.com")
-                .body("wrongField")
+                .body("some data")
                 .when()
                 .post("/post")
                 .then()
